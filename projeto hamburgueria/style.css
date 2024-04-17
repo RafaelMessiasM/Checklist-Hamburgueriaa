@@ -1,0 +1,126 @@
+#body {
+    margin: 0%;
+    padding: 0%;
+    height: 300px;
+    width: 100%;
+    background-color: #fdbba9;
+}
+
+#cabecalho {
+    height: 70px;
+    width: 100%;
+    background-color: #b90606;
+}
+
+.cab {
+    height: 100px;
+    width: 100%;
+    display: flex;
+    position: relative;
+    background-color: #b90606;
+}
+
+#nav {
+    height: 100px;
+    width: 900px;
+    flex-direction: row;
+}
+
+#title {
+    font-weight: 200px;
+    font-size: 40px;
+    margin-left: 50px;
+    font-family: cursive;
+    color: rgb(252, 206, 3);
+    
+}
+
+#face {
+    height: 40px;
+    width: 40px;
+    
+}
+
+.redes {
+    height: 100px;
+    width: 500px;
+    margin-left: 100%;
+    flex: content;
+    flex-direction: row;
+    position: relative;
+    margin-top: 30px;
+    justify-content: space-around
+}
+
+#insta {
+    height: 40px;
+    width: 40px;
+    margin-left: 20px;
+}
+
+
+
+#main {
+    width: 50%;
+    background-color: #ff0000;
+    padding: 20px;
+    margin: auto;
+    border-radius: 10%;
+    margin-top: 10%;
+    margin-left: 10%;
+    height: 70px;
+    width: 300px;
+    position: absolute;
+}
+
+#bot{
+    width: 50%;
+    padding: 20px;
+    margin: auto;
+    border-radius: 10%;
+    margin-top: 0%;
+    margin-left: 10%;
+    height: 70px;
+    width: 300px;
+    position: absolute;
+}
+
+
+
+.container {
+    align-items: center;
+    margin-top: 200px;
+}
+
+
+#hamburguer {
+    height: 500px;
+    width: 500px;
+    margin-left: 60%;
+    margin-top: 3%;
+}
+
+#titulo {
+    font-size: 150%;
+    inline-size: auto;
+    margin-left: 8%;
+}
+
+#botao {
+   background-color: rgb(253, 253, 252);
+   height: 20px;
+   border-radius: 5%;
+   margin-left: 8%;
+
+}
+
+#adicionar {
+    height: 25px;
+    border-radius: 5%;
+}
+
+#adicionar:active {
+    background-color: #faab01;
+}
+
+

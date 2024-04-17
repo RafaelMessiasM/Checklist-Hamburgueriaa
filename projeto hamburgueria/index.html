@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Document</title>
+    <script src="script.js"> </script>
+</head>
+<body id="body">
+  <header class="cab">
+    <div>
+        <h2 id="title"> Burguer R </h2>
+    </div>
+    <nav id="nav">
+        <ul class="redes">
+            <a href="https://www.facebook.com/profile.php?id=61557511443986"> <img src="img/face.png" alt="" id="face"></a>
+            <img src="img/insta.png" alt="" id="insta"></li>
+        </ul>
+
+    </nav>
+  </header>
+ <container class="container">
+    <div id="main">
+        <h1 id="titulo"> Checklist Hamburgueria </h1>
+        <input type="text" placeholder="Digite o item" id="botao">
+        <button id="adicionar"> adicionar </button>
+        <div id="tarefas"></div>
+    </div>
+    <div>
+        <img src="img/burguer.png" alt="hamburguer"  id="hamburguer">
+    </div>
+ </container>
+</body>
+<script>
+    let BotaoAdd = document.getElementById ('adicionar')
+    let Input = document.getElementById ('botao')
+    let Tarefas = document.getElementById ('tarefas')
+    let marcado = false;
+    BotaoAdd.addEventListener ('click', function() {
+        if (Input.value != ''){
+            var tarefa = document.createElement('p');
+            Tarefas.appendChild(tarefa);
+            tarefa.innerText = ' - ' + Input.value;
+            Input.value ='';
+            tarefa.addEventListener('click', function(){
+                if (marcado == false){
+                     tarefa.style.textDecoration = 'line-through';
+                     marcado = true;
+                }
+                else {
+                    tarefa.style.textDecoration = '';
+                    marcado = false;
+                }
+            })
+        }
+    })
+</script>
+</html>
